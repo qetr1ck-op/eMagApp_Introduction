@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Promo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="height=device-height; initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+
+<!--@ css @-->
+<style type="text/css" media="screen">
+  @import "main/css/promo.css";
+  @import "main/css/twitter.css";
+  @import "main/css/cflow.css";
+  @import "reader/css/custom/default.css";
+  @import "reader/css/emag.3.0.min.css";
+</style>
+<!--@@-->
+    
+    
+<!--@ js @-->
+<script type="text/javascript" language="javascript">
+  const STARTUP_METHOD = 'startup';
+  var version = '.android';
+
+  document.write('<script type="text\/javascript" src="cordova.js"><\/script>');
+</script>
+    
+                   
+    <script type="text/javascript" src="reader/js/emag.3.0.min.js"></script>
+
+    <script type="text/javascript" src="main/js/lib/parser.js"></script>
+    <script type="text/javascript" src="main/js/lib/file.js"></script>
+    <script type="text/javascript" src="main/js/lib/twitter.js"></script>
+    <script type="text/javascript" src="main/js/lib/cflow.js"></script>
+    <script type="text/javascript" src="main/js/lib/utils.js"></script>
+    <script type="text/javascript" src="main/js/lib/so.js"></script>
+    <script type="text/javascript" src="main/js/soap/srt.js"></script>
+    <script type="text/javascript" src="main/js/soap/api.js"></script>
+    <script type="text/javascript" src="main/js/config.js"></script>
+    <script type="text/javascript" src="main/js/security.js"></script>
+    <script type="text/javascript" src="main/js/design.js"></script>
+    <script type="text/javascript" src="main/js/setting.js"></script>
+    <script type="text/javascript" src="main/js/twitter.js"></script>
+    <script type="text/javascript" src="main/js/storage.js"></script>    
+    <script type="text/javascript" src="main/js/promo.js"></script> 	
+<!--@@-->
+
+</head>
+
+<body>
+        <!-- img id="splash" src="main/img/splash.png" style="position: absolute;left:0px;top:0px;display:none;" -->
+	<div id="wrapper">	
+		<div id="content">	
+		</div>	
+		<div id='scrAP' class="jPage s100">
+			 <div id="acProtection-backBar">
+				<a id="button_back" class="button_back">{~btnBack~}</a>
+			</div>
+		    <div id="scrollControler">
+		        <div id="acProtection">			   
+		            <div class="message"></div>
+		            <h2 class="errorMessage"></h2>
+		            <ul class="jUL">
+		                <li>
+		                    <input type="text" tabindex="4" value="">
+		                </li>
+		            </ul>
+		            <ul class="jUL">
+		                <li>
+		                    <input type="password" tabindex="5" value="">
+		                </li>
+		            </ul>
+		            <div class="buttonsWrap"> <a id="Submit" class="whiteButton" tabindex="6">{~btnOK~}</a>   
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<button id="testLogin">Sign in</button>
+	</div>
+
+	<div id="tabsControl" style="display:none">
+		<ul>
+		</ul>
+		<div id="backBar">
+			<h1><marquee></marquee></h1>
+			<a class="button_back">&nbsp;eMags&nbsp;</a>
+		</div>
+	</div>
+
+	<div id="preloader" style="display:none">
+		<img id="preloaderImg" src="main/img/load.gif" />
+	</div>
+</body>
+
+</html>

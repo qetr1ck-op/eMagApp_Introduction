@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest android:versionCode="1" android:versionName="0.0.1" android:windowSoftInputMode="adjustPan" package="com.emagcreator.eMagApp_Introduction" xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <permission android:name="com.emagcreator.eMagApp_Introduction.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.emagcreator.eMagApp_Introduction.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="17" />
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <receiver android:name="com.emagcreator.eMagApp_Introduction.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.emagcreator.eMagApp_Introduction" />
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name=".GCMIntentService" />
+        <activity android:configChanges="orientation|keyboardHidden" android:label="@string/app_name" android:name=".eMagApp_Introduction">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.phonegap.DroidGap">
+            <intent-filter>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

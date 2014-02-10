@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.phonegap.plugins.childBrowser"
+    version="1.0.0">                
+    <name>Downloader</name>
+    <description>eMagCreator Downloader Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova, Downloader</keywords>
+                    
+    <js-module src="ChildBrowser.android.js" name="ChildBrowser">
+        <clobbers target="ChildBrowser" /> 
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+	<!-- android-specific elements -->
+	
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ChildBrowser">
+                <param name="android-package" value="com.phonegap.plugins.childBrowser.ChildBrowser"/>
+            </feature>
+        </config-file>
+        
+        <source-file src="ChildBrowser.java" target-dir="src/com/phonegap/plugins/childBrowser" />
+	
+	<!-- permisions
+        <config-file target="AndroidManifest.xml" parent="/*">
+		<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	</config-file>
+	-->
+    </platform>
+</plugin>
+
+

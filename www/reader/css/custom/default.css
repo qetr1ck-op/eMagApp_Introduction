@@ -1,0 +1,188 @@
+/****************************************
+ *  SPACE: General                      *
+ *  	BODY, #container, .jPage        *
+ *  	background settings             *  
+ ****************************************/
+/* applied to everyone active page */
+BODY, #container, .jPage {                             
+	background-color:#666;
+}
+
+/* scroll bar color */
+.scrollBar {
+	background-color:rgba(0,0,0,0.5);
+}
+
+/* text inputs design */
+input[type="text"], input[type="password"] {
+	color: #777;
+	border: 1px;
+	font: normal normal normal 17px/normal Helvetica;		
+}
+
+/* sub menu nodes design */
+UL.jUL LI{	
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4C4D4E), to(#404142));
+	border-bottom: #555858;
+	color: white;
+	padding: 10px;		
+}
+
+/* splash screen design */
+#splashScreen {
+	opacity:.3;
+	background: #0F0F0F;
+}
+
+/* splash window design */
+#splashWnd {
+	text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 0px;
+	font-size: 20px;
+	font-weight: bold;
+	background: #999999;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	font-family: Helvetica, Arial, sans-serif;	
+}
+
+/* loading animation */
+@-webkit-keyframes loading {
+	0% { background-position: 0px 0px; }
+
+	12.49% { background-position: -0px 0px; }
+	12.50% { background-position: -40px 0px; }
+
+	24.99% { background-position: -40px 0px; }
+	25.00% { background-position: -80px 0px; }
+
+	37.49% { background-position: -80px 0px; }
+	37.50% { background-position: -120px 0px; }
+
+	49.99% { background-position: -120px 0px; }			
+	50.00% { background-position: -200px 0px; }
+
+	62.49% { background-position: -200px 0px; }
+	62.50% { background-position: -240px 0px; }
+
+	74.99% { background-position: -240px 0px; }
+	75.00% { background-position: -280px 0px; }
+
+	87.49% { background-position: -280px 0px; }
+	87.50% { background-position: -320px 0px; }
+
+	100% {background-position: -320px;}
+}
+
+DIV.loading {  
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	visibility: visible;
+
+	background-image:url(../../img/custom/loading.png);
+	-webkit-animation: loading 0.5s linear infinite;
+}
+
+/****************************************
+ *  SPACE: Page reader                  *
+ *	    TR#pageNums                 *
+ *  	labels font settings            *    
+ ****************************************/
+TR#pageNums {
+	color: white;
+	font-size: 12px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/****************************************
+ *  SPACE: Control Panel/Menu           *
+ *  	   TABLE.cp                     *
+ *  	   background/text settings     *  
+ ****************************************/
+/* Panel buttons position */
+TABLE.cp TR TD>SPAN{
+	color: #BBB;	
+	font-size: 10px;
+	font-weight: bold;
+	padding: 30px 3px 3px;	
+    background-position: top;			
+}
+
+/* Menu buttons position */
+/* Custom IDs: #cpmIndex, #cpmSearch, #cpmShare, #cpmPgGoTo */
+#cpm LI>DIV:FIRST-CHILD {
+	background-position: center;
+	width: 35px; height: 34px;		
+}
+
+/* Share submenu buttons position */
+/* Custom IDs: #bmTwitter, #bmFacebook, #bmDigg, #bmDelicious, #bmStumbleupon, #bmMyspace */
+#scrShare LI>DIV:FIRST-CHILD {
+	background-position: center;
+	width: 35px; height: 34px;		
+}
+
+/* Zoom top panel buttons position */
+/* Custom IDs: #bmTwitter, #cpzIn, #cpzOut, #cpzClose */
+.pageZoomControl TR>TD{
+	background-position: center;
+}
+
+/****************************************
+ *  SPACE: Text view mode               *
+ *  	#readerText                     *
+ *  	text design settings            *
+ ****************************************/
+#readerText {
+	color: black;
+	font-size: 18px;
+	font-family: Helvetica, Arial, sans-serif;		
+	background-color: white;
+}
+
+/* search phrase selection */
+MARK {
+	background-color: yellow;
+	color: red;
+}
+
+/****************************************
+ *  SPACE: Index Screen                 *
+ *  	#bookIndex                      *
+ *  	caption font settings           *
+ ****************************************/
+#bookIndex {
+	color: white;
+	font-size: 12px;
+	font-family: Helvetica, Arial, sans-serif;				
+}
+
+/****************************************
+ *  SPACE: Prompt window                *
+ *  	#prompt                         *
+ *  	background/shadow/text settings *
+ ****************************************/
+#prompt {
+	background-color:#666;
+ 	-moz-box-shadow: 0 0 5px 5px #888;
+ 	-webkit-box-shadow: 0 0 5px 5px#888;
+ 	box-shadow: 0 0 5px 5px #888;	
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;	
+}
+
+#prompt BUTTON {
+	background-color:#666;
+}
+
+#prompt .inputWrap {
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4C4D4E), to(#404142));
+}
+
+#prompt .message {
+	color:white;
+	font-size:14px;
+}
+
+/****************************************
+ *             THE END                  *
+ ****************************************/

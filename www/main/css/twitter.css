@@ -1,0 +1,29 @@
+A:ACTIVE,A:VISITED,A:LINK {
+	color: #DCDCDC;
+}
+
+#tweets UL.jUL {
+	margin-top:0px;
+	padding-top:0px;
+}
+
+#tweets UL.jUL LI {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#303030), to(#232323));
+	border-bottom: #555858;
+	color: white;
+	padding: 10px;		
+}
+
+#tweets UL.jUL LI>SPAN {
+	width: 82%;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+#tweets UL.jUL LI I {
+	font-size: 10px;
+	font-weight: normal;
+	padding: 3px;
+	float: right;
+	color: #DCDCDC;
+}

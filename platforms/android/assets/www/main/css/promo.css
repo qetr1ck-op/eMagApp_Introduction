@@ -1,0 +1,144 @@
+/*============tabsControl==============*/
+#tabsControl {
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	color: #FFFFFF;
+	background: url(../img/theme/navbar_common.png) #000000 repeat-x;
+}
+
+#tabsControl>UL {
+	list-style: none;	
+}
+
+#tabsControl>UL .selected {
+      background-image: url(../img/theme/navbar_selected.png);   
+      background-position:center center;	
+      background-repeat:no-repeat;
+}
+
+#tabsControl>UL>LI {
+	float: left;
+	height: 47px;
+	text-align: center;
+}
+
+#backBar {
+	width: 100%;
+	height: 47px;
+	display: none;
+	text-align: center;
+}
+
+#backBar>h1 {
+	color: #DCDCDC;
+	font-size: 22px;
+}
+
+#acProtection-backBar {
+	width: 100%;
+	height: 47px;
+	text-align: center;
+	background: url(../img/theme/navbar_common.png) #000000 repeat-x;
+}
+
+#content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+	background: #aaa;
+	overflow: hidden;
+}
+
+#tabsControl>UL DIV {
+	height: 47px;
+	font-size: 10px;
+	line-height: 84px;
+	background-position:center 30%;	
+	background-repeat:no-repeat;
+}
+
+#preloader {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+	opacity: 0.5;
+	z-index: 1000;
+	background: #FFF;
+}
+
+#preloaderImg {
+	position: relative;
+	opacity: 1;
+	z-index: 10001;
+}
+
+P#btnPreload {
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: rgba(0,0,0,1) 0 -1px 1px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #555;
+    border: 2px solid #fff;
+    border-bottom-left-radius: 11px 11px;
+    border-bottom-right-radius: 11px 11px;
+    border-top-left-radius: 11px 11px;
+    border-top-right-radius: 11px 11px;    
+    cursor: pointer;
+    background: url(../img/progress.png) repeat-y; 
+    line-height:25px;
+    height:20px;
+}
+
+#scrAP {
+	z-index: 3000;
+}
+
+.button_back {
+    position: absolute;
+    overflow: hidden;
+    top: 8px;
+    left: 10px;
+    margin: 0;
+    border-width: 0 5px;
+    padding: 0 3px;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    white-space: nowrap;
+    background: none;
+    -webkit-border-image: url(../img/theme/button_back.png) 0 5 0 5;
+}
+
+#testLogin {
+	display: none;
+	position: absolute;
+	margin: 20px;
+	padding: 10px 20px;
+	border: 1px solid #93B0B1;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.5), 2px 2px 6px rgba(0, 0, 0, 0.6);
+	background-image: -webkit-linear-gradient(-80deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.05) 60%), -webkit-linear-gradient(#feeaea, #fb9a9a 25%, #f85f5f 85%, #fb9d9d);
+}

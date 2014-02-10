@@ -1,0 +1,68 @@
+.cflow
+{
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.cflow div.centering
+{
+    -webkit-perspective: 600;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.cflow div.tray
+{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 0.8s;
+    -webkit-transition-timing-function: ease-out;
+}
+
+.cflow div.cell
+{
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+
+    -webkit-transition-property: -webkit-transform opacity;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    opacity: 0;
+}
+
+.cflow table {
+   position: absolute;
+}
+
+.cflow div.title
+{
+    position: absolute;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    z-Index: 100;
+    left: 50%;
+    text-align:center;
+    white-space: nowrap;
+}
+
+.cflow div.cell div.image {
+    position: absolute;
+    background-image: url("main/img/load.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.cflow div.cell img, canvas
+{
+    position: absolute;
+}

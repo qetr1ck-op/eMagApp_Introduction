@@ -1,0 +1,264 @@
+<div id="splashScreen">
+    <div class="loading" style="position:absolute;left:-100px;top:-100px;"></div>
+</div>
+<div id="splashWnd"></div>
+<div id="container" class="s100 jCurrent">{~PageReader~}
+    <div id="readerText">
+        <div id="scrollControler">
+            <p></p>
+        </div>
+    </div>
+    <table id="cp_H" class="cp">
+        <tr>
+            <td id="cphPgPrev"><span>{~menuPrev~}</span>
+            </td>
+            <td id="cphImage" class="twm"><span>{~menuImage~}</span>
+            </td>
+            <td id="cphText" class="imm"><span>{~menuText~}</span>
+            </td>
+            <td id="cphMenu" class="imm"><span>{~menuMenu~}</span>
+            </td>
+            <td id="cphPgZoom" class="imm"><span>{~menuZoom~}</span>
+            </td>
+            <td id="cphIndex" class="imm"><span>{~menuIndex~}</span>
+            </td>
+            <td id="cphShare" class="imm"><span>{~menuShare~}</span>
+            </td>
+            <td id="cphBookmarks" class="imm"><span>{~menuBookmarks~}</span>
+            </td>
+            <td id="cphSearch" class="imm"><span>{~menuSearch~}</span>
+            </td>
+            <td id="cphPgGoTo" class="imm"><span>{~menuGoTo~}</span>
+            </td>
+            <td id="cphPgNext"><span>{~menuNext~}</span>
+            </td>
+        </tr>
+    </table>
+    <table id="cp_V" class="cp">
+        <tr id="cpvPgNext">
+            <td><span>{~menuNext~}</span>
+            </td>
+        </tr>
+        <tr id="cpvImage" class="twm">
+            <td><span>{~menuImage~}</span>
+            </td>
+        </tr>
+        <tr id="cpvText" class="imm">
+            <td><span>{~menuText~}</span>
+            </td>
+        </tr>
+        <tr id="cpvMenu" class="imm">
+            <td><span>{~menuMenu~}</span>
+            </td>
+        </tr>
+        <tr id="cpvPgZoom" class="imm">
+            <td><span>{~menuZoom~}</span>
+            </td>
+        </tr>
+        <tr id="cpvIndex" class="imm">
+            <td><span>{~menuIndex~}</span>
+            </td>
+        </tr>
+        <tr id="cpvShare" class="imm">
+            <td><span>{~menuShare~}</span>
+            </td>
+        </tr>
+        <tr id="cpvBookmarks" class="imm">
+            <td><span>{~menuBookmarks~}</span>
+            </td>
+        </tr>
+        <tr id="cpvSearch" class="imm">
+            <td><span>{~menuSearch~}</span>
+            </td>
+        </tr>
+        <tr id="cpvPgGoTo" class="imm">
+            <td><span>{~menuGoTo~}</span>
+            </td>
+        </tr>
+        <tr id="cpvPgPrev">
+            <td><span>{~menuPrev~}</span>
+            </td>
+        </tr>
+    </table>
+    <div id="pageZoom" class="jPage s100">
+        <div id="_pageZoomControls">
+            <center>
+                <table class="pageZoomControl">
+                    <tr>
+                        <td id="cpzIn"></td>
+                        <td id="cpzOut"></td>
+                        <td id="cpzClose"></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <div id="cntZoom">
+            <div id="scrollControler">
+                <div id="zoomContainer">
+                    <div class="zoom"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scrMenu" class="jPage s100">
+        <div class="toolbar">
+            <h1>{~menuMenu~}</h1><a class="button cancel" href="#">{~btnCancel~}</a>
+        </div>
+        <div id="menuItems" class="pageCanvas">
+            <div id="scrollControler">
+                <ul id="cpm" class="jUL">
+                    <li id="cpmIndex">
+                        <div>&nbsp;</div>
+                        <div>{~menuIndex~}</div>
+                    </li>
+                    <li id="cpmSearch">
+                        <div>&nbsp;</div>
+                        <div>{~menuSearch~}</div>
+                    </li>
+                    <li id="cpmShare">
+                        <div>&nbsp;</div>
+                        <div>{~menuShare~}</div>
+                    </li>
+                    <li id="cpmBookmarks">
+                        <div>&nbsp;</div>
+                        <div>{~menuBookmarks~}</div>
+                    </li>
+                    <li id="cpmPgGoTo">
+                        <div>&nbsp;</div>
+                        <div>{~menuGoTo~}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id='scrIndex' class="jPage s100">
+        <div class='toolbar'>
+            <h1>{~menuIndex~}</h1><a class="button cancel" id="cancel" href="#">{~btnCancel~}</a>  <a id="enterPageNum" class="button" href="#">{~lblPage~}#</a>
+        </div>
+        <div id="scrollWrapper">
+            <div id="scrollControler">
+                <div id="bookIndex"></div>
+            </div>
+        </div>
+    </div>
+    <div id="scrSearch" class="jPage s100">
+        <div class='toolbar'>
+            <h1>{~menuSearch~}</h1><a class="button cancel" href="#">{~btnCancel~}</a>
+        </div>
+        <h2></h2>
+        <ul class="jUL">
+            <li>
+                <input type="text" id="search" name="search" placeholder="{~lblSearchTerm~}" />
+            </li>
+        </ul><a class="whiteButton search">{~btnSearch~}</a>  <a class="grayButton clear">{~btnClear~}</a>
+    </div>
+    <div id="scrSearchResults" class="jPage s100">
+        <div class="toolbar">
+            <h1>{~lblResults~}</h1><a class="button cancel" href="#">{~btnCancel~}</a>
+        </div>
+        <div id="searchResults" class="pageCanvas">
+            <div id="scrollControler">
+                <ul class="jUL"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="scrBookmark" class="jPage s100">
+        <div class='toolbar'>
+            <h1>{~menuBookmarks~}</h1><a class="button cancel" href="#">{~btnCancel~}</a>
+        </div>
+        <div id="bookmarks" class="pageCanvas">
+            <div id="scrollControler">
+                <ul class="jUL"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="scrShare" class="jPage">
+        <div class="toolbar">
+            <h1>{~menuShareThis~}</h1><a class="button cancel" href="#">{~btnCancel~}</a>  <a id="mailto" class="button" href="#">{~menuEmail~}</a>
+        </div>
+        <div id="socBookmarks" class="pageCanvas">
+            <div id="scrollControler">
+                <ul class="jUL">
+                    <li id="bmTwitter">
+                        <div></div>
+                        <div>Twitter</div>
+                    </li>
+                    <li id="bmFacebook">
+                        <div></div>
+                        <div>Facebook</div>
+                    </li>
+                    <li id="bmDigg">
+                        <div></div>
+                        <div>Digg</div>
+                    </li>
+                    <li id="bmDelicious">
+                        <div></div>
+                        <div>del.icio.us</div>
+                    </li>
+                    <li id="bmStumbleupon">
+                        <div></div>
+                        <div>Stumble Upon</div>
+                    </li>
+                    <li id="bmMyspace">
+                        <div></div>
+                        <div>MySpace</div>
+                    </li>
+                    <li id="bmLinkedin">
+                        <div></div>
+                        <div>LinkedIn</div>
+                    </li>
+                    <li id="bmGoogle">
+                        <div></div>
+                        <div>Google</div>
+                    </li>
+                    <li id="bmOther">
+                        <div></div>
+                        <div>Other</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="prompt">
+    <div class="message"></div>
+    <div class="inputWrap">
+        <input type="text" tabindex="0" value="">
+    </div>
+    <div class="buttonsWrap">
+        <button id="Cancel" tabindex="2">{~btnCancel~}</button>
+        <button id="ok" tabindex="3">{~btnOK~}</button>
+    </div>
+</div>
+<div id='scrAP' class="jPage s100">
+    <div id="scrollControler">
+        <div id="acProtection">
+		   
+            <div class="message"></div>
+            <h2 class="errorMessage"></h2>
+            <ul class="jUL">
+                <li>
+                    <input type="text" tabindex="4" value="">
+                </li>
+            </ul>
+            <ul class="jUL">
+                <li>
+                    <input type="password" tabindex="5" value="">
+                </li>
+            </ul>
+            <div class="buttonsWrap"> <a id="Submit" class="whiteButton" tabindex="6">{~btnOK~}</a>   
+            </div>
+        </div>
+    </div>
+</div>
+<div id="LayerScreen">
+    <div id="LayerToolbar" class="toolbar"><a class="button cancel" href="#">{~btnBack~}</a>
+        <div id="LayerTitle"></div>
+    </div>
+    <div id="LayerContent"></div>
+    <object id="Player_FLV" class="MediaPlayer" type="application/x-shockwave-flash" allowScriptAccess="always"></object>
+    <iframe id="Player_YI" class="MediaPlayer" style="background-color: white;"></iframe>
+    <video id="Player_MP4" class="MediaPlayer" controls></video>
+    <div id="Player_IMG" class="MediaPlayer"></div>
+    <audio id="Player_AUDIO"></audio>
+</div>
